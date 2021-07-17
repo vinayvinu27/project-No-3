@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+            <a class="logo" href="">CODE<span>Withme</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!-- courses -->
+    <section class="campus">
+        <h1>Courses We offer</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam molestias doloremque excepturi libero
+            amet expedita laborum facere repudiandae laudantium architecto?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
+                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
+                    molestias maxime repudiandae!</p>
+            </div>
+            <div class="course-col">
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
+                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
+                    molestias maxime repudiandae!</p>
+            </div>
+            <div class="course-col">
+                <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
+                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
+                    molestias maxime repudiandae!</p>
+            </div>
+        </div>
+
+        <!-- facilities -->
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nobis aliquam libero obcaecati similique
+                consectetur nostrum consequatur eaque tempore quas.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/videos.jpg" alt="library">
+                    <h3>Video Tutorials</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/explaning.jpg" alt="library">
+                    <h3>Video call explanation</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/project.jpg" class="projects
+                    " alt="library">
+                    <h3>Project Making</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
+                </div>
+            </div>
+    
+        </section>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Provident aperiam deleniti minima recusandae ea cumque, explicabo <br> culpa quaerat laborum esse,
+            quasi asperiores ad totam, perspiciatis voluptates dolor hic pariatur cupiditate cumque quia sunt. Sit
+            inventore fugiat ex! Cum.</p>
+        <div class="icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-youtube'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-whatsapp'></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

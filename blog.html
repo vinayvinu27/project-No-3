@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo" href="">CODE<span>Withme</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Certificate & Online Programs in 2021</h1>
+    </section>
+
+    <!-- blog page contact -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img  src="images/myprofile.jpeg">
+                <h2>My Certificate & Online Programs in 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi laboriosam fuga beatae. Eos
+                    minima quae temporibus tempore! Impedit mollitia recusandae enim ipsum accusamus aspernatur
+                    provident aliquid quos saepe sed!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea veniam assumenda porro
+                    perferendis, eaque vero impedit modi facere perspiciatis ratione, nobis cum aperiam saepe quasi
+                    natus id praesentium debitis.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, inventore beatae
+                    doloribus nam sint eveniet vitae repudiandae autem consequuntur nihil vel odio, illo ducimus,
+                    excepturi consectetur debitis accusamus in.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam, minus nobis fugit
+                    quidem asperiores exercitationem modi est. Ut ducimus mollitia quas quod illo quo inventore
+                    quibusdam! Est, tempore tempora.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post certificates</h3>
+                <div>
+                    <span>Html5</span>
+                    <span>90%</span>
+                </div>
+                <div>
+                    <span>Css3</span>
+                    <span>81%</span>
+                </div>
+                <div>
+                    <span>Javascript</span>
+                    <span>71%</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>95%</span>
+                </div>
+                <div>
+                    <span>java</span>
+                    <span>79%</span>
+                </div>
+                <div>
+                    <span>Logicial Thinking</span>
+                    <span>85%</span>
+                </div>
+                <div>
+                    <span>communication</span>
+                    <span>65%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Provident aperiam deleniti minima recusandae ea cumque, explicabo <br> culpa quaerat laborum esse,
+            quasi asperiores ad totam, perspiciatis voluptates dolor hic pariatur cupiditate cumque quia sunt. Sit
+            inventore fugiat ex! Cum.</p>
+        <div class="icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-youtube'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-whatsapp'></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
