@@ -7,33 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 </head>
 </head>
 
 <body>
-    <section class="header">
+    <div id="preloader"></div>
+    <section id="home">
         <nav>
             <!-- <a href="index.html"> <a href=null></a><img src="images/logo.png" alt="logo"></a> -->
             <a class="logo" href="">CODE<span>Withme</span></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <!-- <i class="fa fa-times-circle" onclick="hideMenu()"></i> -->
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="courses.html">COURSES</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#courses">COURSES</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
         </nav>
 
 
@@ -42,10 +46,12 @@
             <h1>Hi</h1>
             <h1>I'am viany</h1>
             <h1>Web Designer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente quibusdam beatae possimus
-                provident magnam, architecto, soluta quis eum quas accusantium voluptatibus nulla! Suscipit
-                reprehenderit assumenda minima libero quam quo?</p>
-            <a href="" class="hero-btn">Visit Us To Know More</a>
+            <p>With a passion for Web Designing, social media, and all things marketing, I have both the skill set and
+                professional background necessary to dive deep into the marketing world. As an upbeat, self-motivated
+                team player with excellent communication, I envision an exciting future in the industry. Browse my site
+                to see all that I have to offer. </p>
+            <a href="https://vinayvinu27.github.io/vinayportfolio/" target="_blank" class="hero-btn">Visit Us To Know
+                More</a>
         </div>
     </section>
 
@@ -53,27 +59,28 @@
 
     <section class="course">
         <h1>Courses We offer</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam molestias doloremque excepturi libero
-            amet expedita laborum facere repudiandae laudantium architecto?</p>
+        <p>Learn Web Design online at your own pace. Start today and improve your skills. Join millions of learners from
+            around the world already learning on Udemy. REST APIs With Flask. Risk free learning. Download to your
+            phone. Lifetime access. Advance your career.</p>
 
         <div class="row">
             <div class="course-col">
                 <h3>HTML</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
-                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
-                    molestias maxime repudiandae!</p>
+                <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning
+                    and structure of web content. Other technologies besides HTML are generally used to describe a web
+                    page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
             </div>
             <div class="course-col">
                 <h3>CSS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
-                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
-                    molestias maxime repudiandae!</p>
+                <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+                    written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how
+                    elements should be rendered on screen, on paper, in speech, or on other media.</p>
             </div>
             <div class="course-col">
                 <h3>JAVASCRIPT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
-                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
-                    molestias maxime repudiandae!</p>
+                <p>JavaScript is a dynamic programming language that's used for web development, in web applications,
+                    for game development, and lots more. It allows you to implement dynamic features on web pages that
+                    cannot be done with only HTML and CSS.</p>
             </div>
         </div>
 
@@ -87,19 +94,19 @@
 
         <div class="row">
             <div class="campus-col">
-                <img src="images/html.jpg" alt="">
+                <img src="images/html.jpeg" alt="">
                 <div class="layer">
                     <h3>HTML5</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="images/css.jpg" alt="">
+                <img src="images/css.png" alt="">
                 <div class="layer">
                     <h3>CSS3</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="images/javascript.jpg" alt="">
+                <img src="images/javascript.png" alt="">
                 <div class="layer">
                     <h3>JAVASCRIPT</h3>
                 </div>
@@ -114,17 +121,17 @@
             consectetur nostrum consequatur eaque tempore quas.</p>
         <div class="row">
             <div class="facilities-col">
-                <img src="images/videos.jpg" alt="library">
+                <img src="images/videos.png" alt="library">
                 <h3>Video Tutorials</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
             </div>
             <div class="facilities-col">
-                <img src="images/explaning.jpg" alt="library">
+                <img src="images/explaning.png" alt="library">
                 <h3>Video call explanation</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
             </div>
             <div class="facilities-col">
-                <img src="images/project.jpg" class="projects
+                <img src="images/project.png" class="projects
                 " alt="library">
                 <h3>Project Making</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
@@ -141,7 +148,7 @@
 
         <div class="row">
             <div class="testimonial-col">
-                <img src="images/krishna.JPG">
+                <img src="images/krishna.png">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, natus quia? Fugit, sapiente
                         laboriosam. Numquam.</p>
@@ -154,7 +161,7 @@
                 </div>
             </div>
             <div class="testimonial-col">
-                <img src="images/user2.jpg">
+                <img src="images/user2.png">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, natus quia? Fugit, sapiente
                         laboriosam. Numquam.</p>
@@ -171,27 +178,60 @@
 
     <!-- call to action -->
 
-     <section class="cta">
-           <h1>Enroll For Our Various Online Courses <br> Anywhere From The world</h1>
-           <a href="" class="hero-btn">CONTACT US </a>
-     </section>
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses <br> Anywhere From The world</h1>
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fmez.ink%2Fvinayvinnu&e=ATOS_Mtn-BZ-955TeNKS5q7IwntnYdv8xr-rAXuL87mYZsbs9dMgGUE4w99S6bYTARndN2yLPX6iFX8wZMb4P29uNwhFyXv920FEPQ&s=1"
+            target="_blank" class="hero-btn">CONTACT US </a>
+    </section>
 
-<!-- 
-           footer -->
 
-           <section class="footer">
-                <h4>About Us</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aperiam deleniti minima recusandae ea cumque, explicabo <br> culpa quaerat laborum esse, quasi asperiores ad totam, perspiciatis voluptates  dolor hic pariatur cupiditate cumque quia sunt. Sit inventore fugiat ex! Cum.</p>
-                <div class="icons">
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-instagram-alt'></i>
-                    <i class='bx bxl-github' ></i>
-                    <i class='bx bxl-youtube'></i>
-                    <i class='bx bxl-twitter'></i>
-                    <i class='bx bxl-whatsapp' ></i>
-                </div>
-                <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
-           </section>
+
+    <!-- About Me  -->
+
+    <section id="about">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+            <a class="logo" href="">CODE<span>Withme</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <!-- <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li> -->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+    <!-- about us -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>I done many Projects</h1>
+                <p>Hi My name is M.Viany. I am from Hyderabad and currently pursuing a 3 year bsc(computer science
+                    student) at rao’s degree college(Kurnool, yemminganur) with good computer science knowledge and good
+                    at technical coding skills. I am a kind of person who love’s coding and thinking about new invention
+                    idea’s with my passion for coding ability and skills I have completed a three month of computer web
+                    designing course and java development course from HackrRank. I create realtime project like my own
+                    personal website and anima web application as well as java development also And you can see my
+                    projects. I come from a small family background.
+                    <br>I want to become a data scientist and create a startup.
+                    <br>I have completed of web designing course and I holding certification. And completed java basis
+                    course
+                </p>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fmez.ink%2Fvinayvinnu&e=ATOS_Mtn-BZ-955TeNKS5q7IwntnYdv8xr-rAXuL87mYZsbs9dMgGUE4w99S6bYTARndN2yLPX6iFX8wZMb4P29uNwhFyXv920FEPQ&s=1"
+                    target="_blank" class="hero-btn red-btn ">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/myprofile.png">
+            </div>
+        </div>
+
+    </section>
 
     <script>
 
@@ -204,6 +244,258 @@
             navLinks.style.right = "-200px";
         }
     </script>
+
+    <!-- About end -->
+
+    <!-- Courses section -->
+    <section id="courses">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+            <a class="logo" href="">CODE<span>Withme</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!-- courses -->
+    <section class="campus">
+        <h1>Courses We offer</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam molestias doloremque excepturi libero
+            amet expedita laborum facere repudiandae laudantium architecto?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
+                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
+                    molestias maxime repudiandae!</p>
+            </div>
+            <div class="course-col">
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
+                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
+                    molestias maxime repudiandae!</p>
+            </div>
+            <div class="course-col">
+                <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit quam, omnis adipisci
+                    accusantium totam at, voluptatem quaerat iure animi deleniti quasi voluptatum eveniet officiis culpa
+                    molestias maxime repudiandae!</p>
+            </div>
+        </div>
+
+        <!-- facilities -->
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nobis aliquam libero obcaecati similique
+                consectetur nostrum consequatur eaque tempore quas.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/videos.png" alt="library">
+                    <h3>Video Tutorials</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/explaning.png" alt="library">
+                    <h3>Video call explanation</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/project.png" class="projects
+                                " alt="library">
+                    <h3>Project Making</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eveniet.</p>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- courses end -->
+
+
+    <!-- Blog section -->
+
+    <section id="blog">
+        <nav>
+            <a class="logo" href="">CODE<span>Withme</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Certificate & Online Programs in 2021</h1>
+    </section>
+
+    <!-- blog page contact -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/myprofile.png">
+                <h2>My Certificate & Online Programs in 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi laboriosam fuga beatae. Eos
+                    minima quae temporibus tempore! Impedit mollitia recusandae enim ipsum accusamus aspernatur
+                    provident aliquid quos saepe sed!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea veniam assumenda porro
+                    perferendis, eaque vero impedit modi facere perspiciatis ratione, nobis cum aperiam saepe quasi
+                    natus id praesentium debitis.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, inventore beatae
+                    doloribus nam sint eveniet vitae repudiandae autem consequuntur nihil vel odio, illo ducimus,
+                    excepturi consectetur debitis accusamus in.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam, minus nobis fugit
+                    quidem asperiores exercitationem modi est. Ut ducimus mollitia quas quod illo quo inventore
+                    quibusdam! Est, tempore tempora.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post certificates</h3>
+                <div>
+                    <span>Html5</span>
+                    <span>90%</span>
+                </div>
+                <div>
+                    <span>Css3</span>
+                    <span>81%</span>
+                </div>
+                <div>
+                    <span>Javascript</span>
+                    <span>71%</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>95%</span>
+                </div>
+                <div>
+                    <span>java</span>
+                    <span>79%</span>
+                </div>
+                <div>
+                    <span>Logicial Thinking</span>
+                    <span>85%</span>
+                </div>
+                <div>
+                    <span>communication</span>
+                    <span>65%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog end  -->
+
+
+    <!-- contact us -->
+
+    <section id="contact">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+            <a class="logo" href="">CODE<span>Withme</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact us</h1>
+    </section>
+
+
+    <section class="contact-us">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15258072.400594587!2d82.7525294!3d20.9880135!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1626223990010!5m2!1sen!2sin"
+            width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>N.R.T colony,Yemmiganur</h5>
+                        <p>Kurnool, Andhra Pradesh, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 8919473365</h5>
+                        <p>Monday to Saturday, 10Am to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>vinaymagali27@gmail.com.com</h5>
+                        <p>Email Us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="filehander.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us end -->
+
+    <!-- 
+           footer -->
+
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com/Vinay%20Hero" target="_blank" <i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/Vinay.Vinnu.27/" target="_blank" <i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/vinayvinu27" target="_blank" <i class='bx bxl-github'></i></a>
+            <i class='bx bxl-youtube'></i>
+            <i class='bx bxl-twitter'></i>
+            <a href="https://api.whatsapp.com/send/?phone=8919473365&text&type=phone_number&app_absent=0"
+                target="_blank" <i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Vinay Vinnu</p>
+    </section>
+
+
+    <!-- preloader -->
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+ <!-- home page -->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
 </body>
 
